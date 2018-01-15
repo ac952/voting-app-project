@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'VoteController@index');
+Route::get('/votes','VoteController@show');
+Route::post('/votes','VoteController@store');
