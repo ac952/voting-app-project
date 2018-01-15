@@ -17,7 +17,7 @@ class CreateVoteOptionsTable extends Migration
             $table->increments('id');
             $table->integer('vote_id')->unsigned();
             $table->string('name');
-            $table->integer('total');
+            $table->integer('totalVotes');
             $table->timestamps();
         });
     }
